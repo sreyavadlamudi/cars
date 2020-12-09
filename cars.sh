@@ -13,7 +13,7 @@ case "$n" in
 	"3") echo "Goodbye";;
 	*) echo "Sorry that is not one of the options."
 esac
-if [ $n -eq 1 ]
+if [ "$n" -eq "1" ]
 then
 	echo -n "Year: "
 	read y
@@ -23,7 +23,7 @@ then
 	read o
 	echo "$y":"$m":"$o" >> My_old_cars.txt
 fi
-while [ "$n" -ne 3 ]
+while [ "$n" -ne "3" ]
 do
 	echo -n "type the number 1 to enter a new car
 type the number 2 to display the list of cars
@@ -35,7 +35,7 @@ type the number 3 to quit and exit the program: "; read n
       	     "3") echo "Goodbye";; 
 	     *) echo "Sorry that is not one of the options."
         esac
-if [ $n -eq 1 ]
+if [ "$n" -eq "1" ]
 then
 	echo -n "Year: "
 	read y
